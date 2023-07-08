@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="script.js"></script>
+   
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-   
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
         <title>ADISH TIMALSINA</title>
    
 </head>
@@ -22,27 +22,31 @@
         <div id = "profile">
         </div>
     </div>
-    <div class ="bd-navigation flex-column ms-2 sticky-sm-top">
+    
+   
+        
+    <div class ="bd-navigation flex-column ms-2 sticky-md-top" id="boxes">
        <a href="#aboutme" class= "text-decoration-none text-secondary">
-        <div class="p-3 mt-3  shadow-lg rounded text-wrap d-sm-block">About Me</div>
+        <div class="p-3 mt-3  shadow-lg rounded text-wrap d-sm-block" id="naa">About Me</div>
     </a> 
+    <audio id="beep" preload="auto">
+        <source src="beep.mp3">
+    </audio>
         <a href="#certification" class="text-decoration-none text-secondary">
-            <div class="p-3 mt-3  shadow-lg rounded text-wrap d-sm-block">Certification</div>
+            <div class="p-3 mt-3  shadow-lg rounded text-wrap d-sm-block" id="naa">Certification</div>
         </a>
         <a href="#education" class="text-decoration-none text-secondary">
-            <div class="p-3 mt-3  shadow-lg rounded text-wrap">Education</div>
+            <div class="p-3 mt-3  shadow-lg rounded text-wrap" id="naa">Education</div>
         </a>
         <a href="#workexperience" class="text-decoration-none text-secondary" >
-            <div class="p-3 mt-3  shadow-lg rounded text-wrap"> Work Experience</div>
+            <div class="p-3 mt-3  shadow-lg rounded text-wrap" id="naa"> Work Experience</div>
         </a>
         <a href="#project" class= "text-decoration-none text-secondary">
-            <div class="p-3 mt-3  shadow-lg rounded text-wrap d-sm-block">Projects</div>
+            <div class="p-3 mt-3  shadow-lg rounded text-wrap d-sm-block" id="naa">Projects</div>
         </a> 
-        <a href="#contact" class="text-decoration-none">
-            <div class="p-3 mt-3  shadow-lg rounded text-wrap text-secondary">Contact</div>
+        <a href="#contact" class="text-decoration-none text-secondary">
+            <div class="p-3 mt-3  shadow-lg rounded text-wrap d-sm-block" id="naa">Contact</div>
         </a>
-            
-       
        
     </div>
     <div class="bd-display d-inline-flex flex-column position-relative ps-4 overflow-scroll" id="aboutme">
@@ -161,6 +165,6 @@
   
    
     
-   
+    <script src="script.js"></script>
 </body>
 </html>
