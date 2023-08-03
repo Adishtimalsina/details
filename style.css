@@ -1,14 +1,13 @@
-
-#toggle{
-    position: relative;
-    display: inline-block;
-    background-color:white;
+#toggle {
+   position: relative;
+   display: inline-block;
+   background-color: white;
 }
 
-div #profile{
+div #profile {
    margin: auto;
    display: flex;
-   height:570px;
+   height: 570px;
    width: 450px;
    padding: 10px;
    margin-top: 30px;
@@ -16,12 +15,13 @@ div #profile{
    background-position: center;
    background-repeat: no-repeat;
    border-radius: 20px;
-  background-size:cover;
-  background-color: rgb(67, 2, 127);
-   
+   background-size: cover;
+   background-color: rgb(67, 2, 127);
+
 }
+
 @media screen and (max-width: 1230px) {
-   div #profile{
+   div #profile {
       margin: auto;
       position: relative;
       display: flex;
@@ -36,12 +36,13 @@ div #profile{
       background-size: cover;
    }
 }
+
 @media screen and (max-width: 600px) {
-   div #profile{
+   div #profile {
       margin: auto;
       position: relative;
       display: flex;
-      max-height:250px;
+      max-height: 250px;
       max-width: 200px;
       padding: 10px;
       margin-top: 30px;
@@ -52,52 +53,58 @@ div #profile{
       background-size: cover;
    }
 }
- .name {
-    text-align: center;
- }
 
- .toggle{
-    position: relative;
-    display: inline-block;
-    width:40px;
-    height:20px;
-    border-radius: 18px;
-    border: 2px solid darkgray;
-    background-color: black;
- }
-
- 
- .toggle:after{
-    content: '';
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: rgb(174, 157, 157);
-    top: .01px;
-    left:.01px;
-    transition: all 0.5s;
- }
- .checkbox:checked + .toggle::after{
-    left:18px;
- }
- .checkbox:checked + .toggle{
-    background-color: rgb(239, 233, 233);
- }
- .checkbox{
-    display: none;
-
- }
-body{
-    background-color: rgb(255, 255, 255);
-    color:rgb(10, 3, 3);
-}
-.darkMode{
-background-color: rgb(56, 54, 54);
-color:rgb(255, 255, 255);
+.name {
+   text-align: center;
 }
 
-div #Introduction{
+.toggle {
+   position: relative;
+   display: inline-block;
+   width: 40px;
+   height: 20px;
+   border-radius: 18px;
+   border: 2px solid darkgray;
+   background-color: black;
+}
+
+
+.toggle:after {
+   content: '';
+   position: absolute;
+   width: 18px;
+   height: 18px;
+   border-radius: 50%;
+   background-color: rgb(174, 157, 157);
+   top: .01px;
+   left: .01px;
+   transition: all 0.5s;
+}
+
+.checkbox:checked+.toggle::after {
+   left: 18px;
+}
+
+.checkbox:checked+.toggle {
+   background-color: rgb(239, 233, 233);
+}
+
+.checkbox {
+   display: none;
+
+}
+
+body {
+   background-color: rgb(255, 255, 255);
+   color: rgb(10, 3, 3);
+}
+
+.darkMode {
+   background-color: rgb(56, 54, 54);
+   color: rgb(255, 255, 255);
+}
+
+div #Introduction {
    position: relative;
    margin: auto;
    height: 50px;
@@ -107,30 +114,31 @@ div #Introduction{
 
 }
 
+.bd-navigation {
+   width: 20%;
+   height: 480px;
+   display: inline-flex;
 
-.bd-navigation{
-  width: 20%;
-  height: 480px;
-  display: inline-flex;
-  
 }
+
 @media screen and (max-width: 767px) {
-   .bd-navigation{
+   .bd-navigation {
       padding-left: 25px;
-         width:90%;
-         height:480px;
-         text-align: center;
-         margin-left: 27px;
-      }
+      width: 90%;
+      height: 480px;
+      text-align: center;
+      margin-left: 27px;
    }
-
-.bd-display{
-   width:78%;
-   /* height: 800px ; */
-   
 }
-@media screen and (max-width :767px){
-   div.bd-display{
+
+.bd-display {
+   width: 78%;
+   /* height: 800px ; */
+
+}
+
+@media screen and (max-width :767px) {
+   div.bd-display {
       width: 100%;
       margin-left: 10px;
       margin-right: 10px;
@@ -138,128 +146,152 @@ div #Introduction{
 
 }
 
-#naa{
+#naa {
    color: rgb(178, 132, 3)
 }
 
-.bd-footer{
-   width: 100%;
+.bd-footer {
+
+   width: auto;
    height: 200px;
-   background: rgb(7,14,27);
-   background: linear-gradient(0deg, rgba(7,14,27,1) 5%, rgba(147,158,187,1) 50%, rgba(215,229,237,1) 100%);
-   display: flex;
+   background: rgb(7, 14, 27);
+   background: linear-gradient(0deg, rgba(7, 14, 27, 1) 5%, rgba(147, 158, 187, 1) 50%, rgba(215, 229, 237, 1) 100%);
+   display: grid;
    justify-content: center;
    align-items: center;
 
 }
-.certification, .Education, .workExperience{
+
+.certification,
+.Education,
+.workExperience {
    display: inline-block;
    height: 60px;
    width: 100%;
    text-align: center;
    margin-left: 0;
    padding: 8px;
-   color:rgb(211, 157, 10);
+   color: rgb(211, 157, 10);
 
-   
-   
 }
 
- .java{
+.java {
    width: 100%;
 }
-.education{
+
+.education {
    width: 100%;
    height: 100px;
-   background-color: red;
 
 }
 
-.myEmail{
+.myPhone,
+.myEmail,
+.myFacebook,
+.myInstagram,
+.myGithub {
    display: none;
-  
 }
-.forHover:hover + .myEmail{
-   text-indent: -40px;
-   display: block;
+
+.forHover:hover+.myEmail {
+   text-indent: -35px;
+   display:grid;
    font-size: small;
 }
-.myPhone{
-  display: none;
-}
-.hoverPhone:hover +.myPhone{
-   text-indent: -10px;
+
+.hoverPhone:hover+.myPhone {
+   text-indent: -17px;
    display: flex;
    font-size: small;
 }
-.myFacebook{
-   display: none;
-}
-.hoverFacebook:hover + .myFacebook{
-   text-indent: -10px;
-   display: flex;
-   font-size: small;
-}
-.myInstagram{
-   display:none;
-}
-.hoverInstagram:hover + .myInstagram{
+
+.hoverFacebook:hover+.myFacebook {
    text-indent: -15px;
    display: flex;
    font-size: small;
 }
-#naa:hover{
-   color:white;
-   background: rgb(246, 244, 247);
-background: linear-gradient(90deg, rgba(69,64,73,1) 0%, rgba(147,126,126,1) 34%, rgba(166,128,117,1) 62%, rgba(185,154,146,1) 81%, rgba(215,202,182,1) 100%);
-animation-name: slide;
-animation-duration: 1s;
-animation-timing-function:linear;
-animation-direction:normal;
-/* animation-iteration-count: infinite; */
-}
-@keyframes slide {
-   0%{
-      text-indent: 60%;
-   }
-100%{
-   text-indent: 0%;
-}
+
+.hoverInstagram:hover+.myInstagram {
+   text-indent: -20px;
+   display: flex;
+   font-size: small;
 }
 
-.text-shadow{
+#naa:hover {
+   color: white;
+   background: rgb(246, 244, 247);
+   background: linear-gradient(90deg, rgba(69, 64, 73, 1) 0%, rgba(147, 126, 126, 1) 34%, rgba(166, 128, 117, 1) 62%, rgba(185, 154, 146, 1) 81%, rgba(215, 202, 182, 1) 100%);
+   animation-name: slide;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-direction: normal;
+   /* animation-iteration-count: infinite; */
+}
+
+@keyframes slide {
+   0% {
+      text-indent: 60%;
+   }
+
+   100% {
+      text-indent: 0%;
+   }
+}
+
+.text-shadow {
    text-shadow: gray 0 4px;
 }
 
-.java:hover, .codepath:hover{
+.java:hover,
+.codepath:hover {
    transform: scale(1.2);
-   
+
 }
-.Light{
+
+.Light {
    filter: invert(100%);
 }
-.name{
+
+.name {
    /* background-color: rgb(27, 222, 222); */
 }
-.animation:hover{
-   
+
+.animation:hover {
+
    animation-name: rotate;
    animation-duration: 10000ms;
    animation-timing-function: linear;
    animation-iteration-count: infinite;
-   animation-direction:alternate-reverse;
+   animation-direction: alternate-reverse;
 
 }
-   
-   @keyframes rotate{
-      0%{
-         transform: rotate(0deg);
-         color: rgb(211, 157, 10)
-      }
-      100%{
-         transform:rotateY(360deg) ;
-         color: rgb(5, 169, 131);
-      }
+
+@keyframes rotate {
+   0% {
+      transform: rotate(0deg);
+      color: rgb(211, 157, 10)
    }
 
+   100% {
+      transform: rotateY(360deg);
+      color: rgb(5, 169, 131);
+   }
+}
 
+.bar {
+   margin-top: 5px;
+   height: 50px;
+   padding: 13px;
+   margin-left: 0;
+   margin-right: 0;
+   /* background-color: beige; */
+}
+
+.names{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: fit-content;
+   margin-bottom: 50px;
+}

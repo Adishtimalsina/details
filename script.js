@@ -3,12 +3,6 @@ function darkLight(){
     element.classList.toggle("darkMode");
 }
 
-// let more = document.querySelector("#naa");
-// let audio = document.getElementById('beep');
-// more.addEventListener('mouseenter', function() {
-// audio.play();
-// });
-
 
 var beepOnce = $("#beep")[0];
 $("#boxes div")
@@ -18,3 +12,42 @@ $("#boxes div")
     beepOnce.pause();
     beepOnce.play();
 })
+
+function hideEmail(){
+    $(".myEmail").hide();
+    
+}
+function showEmail(){
+    $(".myEmail").show();
+}
+function hidePhone(){
+    $(".myPhone").hide();
+    
+}
+function showPhone(){
+    $(".myPhone").show();
+}
+
+function hideFacebook(){
+    $(".myFacebook").hide();
+    
+}
+function showFacebook(){
+    $(".myFacebook").show();
+}
+
+function hideInstagram(){
+    $(".myInstagram").hide();
+    
+}
+function showInstagram(){
+    $(".myInstagram").show();
+}
+
+function hideGithub(){
+    $(".myGithub").hide();
+    
+}
+function showGithub(){
+    $(".myGithub").show();
+}
