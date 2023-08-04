@@ -242,11 +242,11 @@ div #Introduction {
    text-shadow: gray 0 4px;
 }
 
-.java:hover,
+/* .java:hover,
 .codepath:hover {
    transform: scale(1.2);
 
-}
+} */
 
 .Light {
    filter: invert(100%);
@@ -307,4 +307,30 @@ div #Introduction {
 .instagram:hover,
 .Github:hover{
    transform: translateY(-13px);
+}
+
+.nextButton{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.codepath{
+   display: none;
+}
+
+#previous:hover, #next:hover{
+   animation-name: slideColor;
+   animation-duration: 1000ms;
+   animation-iteration-count: infinite;
+   
+}
+
+@keyframes slideColor{
+   0%{
+     transform: none;
+   }
+   100%{
+     background-color: rgb(211, 157, 10);
+   }
 }

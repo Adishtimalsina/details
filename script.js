@@ -51,3 +51,13 @@ function hideGithub(){
 function showGithub(){
     $(".myGithub").show();
 }
+function showPreviousCertificate(){
+    $(".codepath").hide();
+    $(".java").show();
+}
+
+ function showNextCertificate(){
+    $(".codepath").show();
+    $(".java").hide();
+    
+ }
