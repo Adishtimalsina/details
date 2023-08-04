@@ -193,7 +193,7 @@ div #Introduction {
    display: none;
 }
 
-.forHover:hover+.myEmail {
+/* .forHover:hover+.myEmail {
    text-indent: -35px;
    display:grid;
    font-size: small;
@@ -215,7 +215,7 @@ div #Introduction {
    text-indent: -20px;
    display: flex;
    font-size: small;
-}
+} */
 
 #naa:hover {
    color: white;
@@ -288,10 +288,23 @@ div #Introduction {
 }
 
 .names{
-   position: relative;
-   display: flex;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+   display: inline-flex;
    justify-content: center;
    align-items: center;
    height: fit-content;
    margin-bottom: 50px;
+  
+  
+}
+
+.Email:hover, 
+.phone:hover, 
+.facebook:hover,
+.instagram:hover,
+.Github:hover{
+   transform: translateY(-13px);
 }
