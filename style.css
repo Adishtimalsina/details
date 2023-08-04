@@ -151,7 +151,6 @@ div #Introduction {
 }
 
 .bd-footer {
-
    width: auto;
    height: 200px;
    background: rgb(7, 14, 27);
@@ -296,7 +295,7 @@ div #Introduction {
    justify-content: center;
    align-items: center;
    height: fit-content;
-   margin-bottom: 50px;
+   margin-bottom: 110px;
   
   
 }
@@ -306,6 +305,7 @@ div #Introduction {
 .facebook:hover,
 .instagram:hover,
 .Github:hover{
+   cursor: pointer;
    transform: translateY(-13px);
 }
 
