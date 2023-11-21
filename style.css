@@ -8,15 +8,15 @@ div #profile {
    margin: auto;
    display: flex;
    height: 570px;
-   width: 450px;
+   width: 550px;
    padding: 10px;
    margin-top: 30px;
-   background-image: url(image/final.png);
+   /* background-image: url(image/final.png); */
    background-position: center;
    background-repeat: no-repeat;
    border-radius: 20px;
    background-size: cover;
-   background-color: rgb(67, 2, 127);
+   /* background-color: rgb(67, 2, 127); */
 
 }
 
@@ -26,10 +26,10 @@ div #profile {
       position: relative;
       display: flex;
       height: 400px;
-      width: 300px;
+      width: 450px;
       padding: 10px;
       margin-top: 30px;
-      background-image: url(image/final.png);
+      /* background-image: url(image/final.png); */
       background-position: center;
       background-repeat: no-repeat;
       border-radius: 20px;
@@ -43,10 +43,10 @@ div #profile {
       position: relative;
       display: flex;
       max-height: 250px;
-      max-width: 200px;
+      max-width: 350px;
       padding: 10px;
       margin-top: 30px;
-      background-image: url(image/final.png);
+      /* background-image: url(image/final.png); */
       background-position: center;
       background-repeat: no-repeat;
       border-radius: 20px;
@@ -174,8 +174,8 @@ div #Introduction {
 
 }
 
-.java {
-   width: 100%;
+.java, .codepath {
+   width: 100%; 
 }
 
 .education {
@@ -333,4 +333,10 @@ div #Introduction {
    100%{
      background-color: rgb(211, 157, 10);
    }
+}
+
+.newProfile{
+   width: 60%;
+   height: 100%;
+
 }
