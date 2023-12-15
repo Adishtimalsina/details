@@ -3,7 +3,6 @@ function darkLight(){
     element.classList.toggle("darkMode");
 }
 
-
 var beepOnce = $("#beep")[0];
 $("#boxes div")
 .mouseenter(function(){

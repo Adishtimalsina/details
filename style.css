@@ -1,61 +1,133 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Space+Mono:wght@900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalnia:wght@500&family=Space+Mono:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
 #toggle {
    position: relative;
    display: inline-block;
    background-color: white;
 }
+#boxes{
+   font-family: 'Kalnia', serif;
+font-family: 'Space Mono', monospace;
+}
+
+#aboutme{
+   font-family: 'Merriweather', serif;
+}
+
+#top{}
 
 div #profile {
-   margin: auto;
+   background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),url(image/code.jpg);
+   /* background-position: center; */
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
    display: flex;
    height: 570px;
-   width: 550px;
+   width: 100%;
    padding: 10px;
    margin-top: 30px;
-   /* background-image: url(image/final.png); */
-   background-position: center;
-   background-repeat: no-repeat;
-   border-radius: 20px;
-   background-size: cover;
+   
+   /* border: 2px solid red; */
    /* background-color: rgb(67, 2, 127); */
 
 }
 
 @media screen and (max-width: 1230px) {
    div #profile {
-      margin: auto;
+      
       position: relative;
       display: flex;
       height: 400px;
-      width: 450px;
+      width: 100%;
       padding: 10px;
       margin-top: 30px;
       /* background-image: url(image/final.png); */
-      background-position: center;
+      /* background-position: center; */
       background-repeat: no-repeat;
-      border-radius: 20px;
+      /* border: 2px solid red; */
       background-size: cover;
+      align-content: end;
    }
 }
 
 @media screen and (max-width: 600px) {
    div #profile {
-      margin: auto;
       position: relative;
       display: flex;
-      max-height: 250px;
-      max-width: 350px;
+      height: 250px;
+      width: 100%;
       padding: 10px;
       margin-top: 30px;
       /* background-image: url(image/final.png); */
-      background-position: center;
+      /* background-position: center; */
       background-repeat: no-repeat;
-      border-radius: 20px;
+      /* border: 2px solid red; */
       background-size: cover;
+      
    }
 }
+.greeting{
+  
+   /* -webkit-text-stroke:1px white; */
+   transform: translate(-50%, -50%);
+   background-image: linear-gradient(#fffbfb, #ffffff);
+    color: transparent; 
+   background-repeat: no-repeat;
+   -webkit-background-clip: text;
+   background-position: 0, 0;
+   animation: showName 1s linear;
+}
+.firstName{
+   /* -webkit-text-stroke:1px white; */
+   background-image: linear-gradient(#ffffff, #ffffff);
+   color: transparent;
+   background-repeat: no-repeat;
+   -webkit-background-clip: text;
+   background-position: 0, 0;
+   animation: showFirstName 3s linear;
+}
 
+@keyframes showName {
+  0%{
+   background-position:-500px, 0;
+  }
+  
+}
+
+@keyframes showFirstName{
+   0%{
+      background-position:500px, 0;
+     }
+}
+.first-name{
+   font-family: 'Merriweather', serif;
+   font-size: 50px;
+   /* -webkit-text-stroke:1px white;
+   background-image: linear-gradient(#fff, #fff); */
+   
+}
 .name {
+   font-family: 'Bebas Neue', sans-serif;
+   font-family: 'Kalnia', serif;
+   font-family: 'Space Mono', monospace;
+   position: relative;
+   align-items: center;
    text-align: center;
+   /* border: 2px solid red; */
+   margin: auto;
+    width: 50%;
+    font-size: 160px;
+
+}
+
+.photo{
+   position:absolute;
+   margin-left:60%;
+   /* border: 3px solid red; */
 }
 
 .toggle {
@@ -65,7 +137,7 @@ div #profile {
    height: 20px;
    border-radius: 18px;
    border: 2px solid darkgray;
-   background-color: black;
+   background-color:rgb(8, 8, 8);
 }
 
 
@@ -94,14 +166,16 @@ div #profile {
 
 }
 
-body {
+Body {
+   
+   font-family: 'Merriweather', serif;
    background-color: rgb(255, 255, 255);
-   color: rgb(10, 3, 3);
+   color: rgb(0, 0, 0);
 }
 
 .darkMode {
-   background-color: rgb(56, 54, 54);
-   color: rgb(255, 255, 255);
+   background-color: rgb(30, 28, 28);
+   color: rgb(251, 251, 251);
 }
 
 div #Introduction {
@@ -164,6 +238,8 @@ div #Introduction {
 .certification,
 .Education,
 .workExperience {
+   font-family: 'Kalnia', serif;
+   font-family: 'Space Mono', monospace;
    display: inline-block;
    height: 60px;
    width: 100%;
@@ -255,7 +331,7 @@ div #Introduction {
    /* background-color: rgb(27, 222, 222); */
 }
 
-.animation:hover {
+/* .animation:hover {
 
    animation-name: rotate;
    animation-duration: 10000ms;
@@ -263,7 +339,7 @@ div #Introduction {
    animation-iteration-count: infinite;
    animation-direction: alternate-reverse;
 
-}
+} */
 
 @keyframes rotate {
    0% {
@@ -287,6 +363,8 @@ div #Introduction {
 }
 
 .names{
+   font-family: 'Kalnia', serif;
+   font-family: 'Space Mono', monospace;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -339,4 +417,11 @@ div #Introduction {
    width: 60%;
    height: 100%;
 
+}
+#contact{
+   color: white;
+   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/footer.jpg);
+   /* background-position: center; */
+   background-repeat: no-repeat;
+   background-size: cover;
 }
