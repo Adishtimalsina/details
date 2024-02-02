@@ -425,3 +425,12 @@ div #Introduction {
    background-repeat: no-repeat;
    background-size: cover;
 }
+
+/* download resume */
+.download{
+   position: relative;
+   display: inline;
+}
+#resume{
+   color: red;
+}
