@@ -434,3 +434,11 @@ div #Introduction {
 #resume{
    color: red;
 }
+
+.youtube{
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 800px;
+   height: 450px;
+}
